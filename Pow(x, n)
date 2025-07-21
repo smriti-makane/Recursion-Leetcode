@@ -1,0 +1,103 @@
+50. Pow(x, n)
+Implement pow(x, n), which calculates x raised to the power n (i.e., xn).
+Example 1:
+
+Input: x = 2.00000, n = 10
+Output: 1024.00000
+
+Example 2:
+Input: x = 2.10000, n = 3
+Output: 9.26100
+
+Example 3:
+Input: x = 2.00000, n = -2
+Output: 0.25000
+
+class Solution {
+    public double myPow(double x, int n) {
+        long N = n ; 
+        if(N<0){
+            x= 1/x; 
+            N= -N; 
+        }
+        return power(x,n);
+    }
+    private double power(double x , long n ){
+        if(n==0) return 1; 
+        double half = power(x, n/2);
+        if(n%2==0){
+            return half*half; 
+        }
+        else{
+            return half * half * x; 
+        }    
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Read more
+
+
+
+
+
+
+
+Copyright © 2025 LeetCode. All rights reserved.
+
+10.9K
+
+
+470
+
+
+242 Online
+Java
+Auto
+
+
+
+
+
+1
+class Solution {
+    public double myPow(double x, int n) {
+        long N = n ; 
+        if(N<0){
+            x= 1/x; 
+            N= -N; 
+        }
+        return power(x,n);
+    }
+    private double power(double x , long n ){
+
+Saved
+Accepted
+Runtime: 0 ms
+Case 1
+Case 2
+Case 3
+Input
+x =
+2.00000
+n =
+-2
+Output
+0.25000
+Expected
+0.25000
+Contribute a testcase
