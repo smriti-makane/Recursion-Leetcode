@@ -10,7 +10,7 @@ Input: digits = [0,2,2]
 Output: 2
 
 Example 3:
-Input: digits = [6,6,6]
+Input: digits = [6,6,6] 
 Output: 1
 
 Example 4:
